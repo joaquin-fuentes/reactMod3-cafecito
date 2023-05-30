@@ -1,27 +1,24 @@
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu from './components/Menu';
-import Footer from './components/Footer';
-import {Container} from "react-bootstrap"
-import Error404 from "./components/Error404";
-import Inicio from "./components/Inicio";
-import DetalleProducto from "./components/DetalleProducto";
-import CrearProducto from "./components/CrearProducto";
-import EditarProducto from "./components/EditarProducto";
-import Administrador from "./components/Administrador";
+import Menu from './components/common/Menu';
+import Footer from './components/common/Footer';
+import Error404 from "./components/views/Error404";
+import Inicio from "./components/views/Inicio";
+import DetalleProducto from "./components/views/DetalleProducto";
+import CrearProducto from "./components/views/producto/CrearProducto";
+import EditarProducto from "./components/views/producto/EditarProducto";
+import Administrador from "./components/views/Administrador";
 
 const App = () => {
   return (
     <>
       <Menu></Menu>
-      {/* <Container className='mainPage'> */}
-        {/* <Error404></Error404> */}
-        {/* <Inicio></Inicio> */}
-        {/* <DetalleProducto></DetalleProducto> */}
-        {/* <CrearProducto></CrearProducto> */}
-        {/* <EditarProducto></EditarProducto> */}
-        <Administrador></Administrador>
-      {/* </Container> */}
+      <Error404></Error404>
+      <Inicio></Inicio>
+      <DetalleProducto></DetalleProducto>
+      <CrearProducto></CrearProducto>
+      <EditarProducto></EditarProducto>
+      <Administrador></Administrador>
       <Footer></Footer>
     </>
   );

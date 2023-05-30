@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
-import cafe1 from "../assets/cafeNoseNombre.jpg"
+import cafe1 from "../../assets/cafeNoseNombre.jpg"
+
 const DetalleProducto = () => {
     return (
         <Container >

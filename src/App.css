@@ -1,13 +1,16 @@
-#root{
+ #root{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
-.mainPage{
+.main{
     flex-grow: 1;
-  }
+  } 
+.imgError404{
+  width: 100%;
+}
 .imgBanner{
-  height: 50vh;
+   height: 50vh;
 }
 .imgCafe{
   height: 300px;

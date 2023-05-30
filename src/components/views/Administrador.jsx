@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Button, Table } from "react-bootstrap"
-import ItemProducto from './ItemProducto';
+import ItemProducto from './producto/ItemProducto';
 
 const Administrador = () => {
     return (
