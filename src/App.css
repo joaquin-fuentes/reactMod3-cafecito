@@ -6,4 +6,15 @@
 .mainPage{
     flex-grow: 1;
   }
-  
+.imgBanner{
+  height: 50vh;
+}
+.imgCafe{
+  height: 300px;
+}
+@media (max-width: 768px) {
+  .alineacionProductos {
+   display: flex;
+   justify-content: center;
+  }
+}
