@@ -24,7 +24,7 @@ const Inicio = () => {
                             <Card.Body>
                                 <Card.Title>Nombre del cafe</Card.Title>
                                 <Card.Text>
-                                    $800.00
+                                    $800,00
                                 </Card.Text>
                                 <Button variant="primary">Ver detalle</Button>
                             </Card.Body>
@@ -36,7 +36,7 @@ const Inicio = () => {
                             <Card.Body>
                                 <Card.Title>Nombre del cafe</Card.Title>
                                 <Card.Text>
-                                    $800.00
+                                    $800,00
                                 </Card.Text>
                                 <Button variant="primary">Ver detalle</Button>
                             </Card.Body>
@@ -48,7 +48,7 @@ const Inicio = () => {
                             <Card.Body>
                                 <Card.Title>Nombre del cafe</Card.Title>
                                 <Card.Text>
-                                    $800.00
+                                    $800,00
                                 </Card.Text>
                                 <Button variant="primary">Ver detalle</Button>
                             </Card.Body>
@@ -60,7 +60,7 @@ const Inicio = () => {
                             <Card.Body>
                                 <Card.Title>Nombre del cafe</Card.Title>
                                 <Card.Text>
-                                    $800.00
+                                    $800,00
                                 </Card.Text>
                                 <Button variant="primary">Ver detalle</Button>
                             </Card.Body>

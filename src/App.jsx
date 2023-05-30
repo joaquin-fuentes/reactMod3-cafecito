@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import {Container} from "react-bootstrap"
 import Error404 from "./components/Error404";
 import Inicio from "./components/Inicio";
+import DetalleProducto from "./components/DetalleProducto";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <Menu></Menu>
       {/* <Container className='mainPage'> */}
         {/* <Error404></Error404> */}
-        <Inicio></Inicio>
+        {/* <Inicio></Inicio> */}
+        <DetalleProducto></DetalleProducto>
       {/* </Container> */}
       <Footer></Footer>
     </>
