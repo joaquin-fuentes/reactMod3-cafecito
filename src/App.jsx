@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Menu from './components/Menu';
 
 const App = () => {
   return (
-    <div>
-      Hola mundo
-    </div>
+    <>
+      <Menu></Menu>
+    </>
   );
 };
 
