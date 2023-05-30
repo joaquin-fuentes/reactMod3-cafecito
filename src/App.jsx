@@ -7,6 +7,7 @@ import Error404 from "./components/Error404";
 import Inicio from "./components/Inicio";
 import DetalleProducto from "./components/DetalleProducto";
 import CrearProducto from "./components/CrearProducto";
+import EditarProducto from "./components/EditarProducto";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
         {/* <Error404></Error404> */}
         {/* <Inicio></Inicio> */}
         {/* <DetalleProducto></DetalleProducto> */}
-        <CrearProducto></CrearProducto>
+        {/* <CrearProducto></CrearProducto> */}
+        <EditarProducto></EditarProducto>
       {/* </Container> */}
       <Footer></Footer>
     </>
