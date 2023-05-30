@@ -8,6 +8,7 @@ import Inicio from "./components/Inicio";
 import DetalleProducto from "./components/DetalleProducto";
 import CrearProducto from "./components/CrearProducto";
 import EditarProducto from "./components/EditarProducto";
+import Administrador from "./components/Administrador";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
         {/* <Inicio></Inicio> */}
         {/* <DetalleProducto></DetalleProducto> */}
         {/* <CrearProducto></CrearProducto> */}
-        <EditarProducto></EditarProducto>
+        {/* <EditarProducto></EditarProducto> */}
+        <Administrador></Administrador>
       {/* </Container> */}
       <Footer></Footer>
     </>
