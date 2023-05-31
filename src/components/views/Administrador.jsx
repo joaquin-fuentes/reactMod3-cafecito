@@ -12,7 +12,7 @@ const Administrador = () => {
                 </Button>
             </div>
             <hr />
-            <Table striped bordered hover size="sm">
+            <Table striped responsive bordered hover size="sm">
                 <thead>
                     <tr>
                         <th>Cod</th>
