@@ -7,7 +7,7 @@ const Administrador = () => {
         <Container className='my-5'>
             <div className='d-flex justify-content-between '>
                 <h3>Productos disponibles</h3>
-                <Button variant="primary">
+                <Button variant="primary" href="/administrador/crear">
                     Agregar
                 </Button>
             </div>
