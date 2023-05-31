@@ -2,7 +2,7 @@ import React from 'react';
 
 const Registro = () => {
     return (
-        <div>
+        <div className='main'>
             registro
         </div>
     );

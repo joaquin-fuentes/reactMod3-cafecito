@@ -9,7 +9,7 @@ const Error404 = () => {
                     <img src={imgError404} alt="imagen de error 404" className="imgError404" />
                 </Col>
                 <Col xs={12}>
-                    <Button variant="primary" type="submit">
+                    <Button variant="primary" href="/">
                         Volver al inicio
                     </Button>
                 </Col>

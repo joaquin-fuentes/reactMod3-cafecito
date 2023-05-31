@@ -11,7 +11,7 @@ const CardProducto = () => {
                     <Card.Text>
                         $800,00
                     </Card.Text>
-                    <Button variant="primary">Ver detalle</Button>
+                    <Button variant="primary" href="/detalleProducto">Ver detalle</Button>
                 </Card.Body>
             </Card>
         </Col>
