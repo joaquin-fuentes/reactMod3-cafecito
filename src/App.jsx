@@ -15,10 +15,10 @@ const App = () => {
       <Menu></Menu>
       {/* <Error404></Error404> */}
       <Inicio></Inicio>
-      {/* <DetalleProducto></DetalleProducto>
-      <CrearProducto></CrearProducto>
-      <EditarProducto></EditarProducto>
-      <Administrador></Administrador> */}
+      {/* <DetalleProducto></DetalleProducto> */}
+      {/* <CrearProducto></CrearProducto> */}
+      {/* <EditarProducto></EditarProducto> */}
+      {/* <Administrador></Administrador> */}
       <Footer></Footer>
     </>
   );
