@@ -1,16 +1,20 @@
-import {Container, Nav, Navbar} from "react-bootstrap"
+import { Container, Nav, Navbar } from "react-bootstrap"
+import { Link, NavLink } from "react-router-dom"
 
 const Menu = () => {
     return (
         <Navbar bg="danger" variant="dark">
             <Container>
-                <Navbar.Brand href="/">Cafecito</Navbar.Brand>
-                <Nav className="ms-auto">
-                    <Nav.Link href="/">Inicio</Nav.Link>
-                    <Nav.Link href="/registro">Registro</Nav.Link>
-                    <Nav.Link href="/administrador">Administrador</Nav.Link>
-                    <Nav.Link href="/login">Login</Nav.Link>
-                </Nav>
+                <Navbar.Brand as={Link} to={"/"}>Cafecito</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto">
+                        <NavLink end to={"/"} className={"nav-item nav-link"} >Inicio</NavLink>
+                        <NavLink end to={"/registro"} className={"nav-item nav-link"}>Registro</NavLink>
+                        <NavLink end to={"/administrador"} className={"nav-item nav-link"}>Administrador</NavLink>
+                        <NavLink end to={"/login"} className={"nav-item nav-link"}>Login</NavLink>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     );
