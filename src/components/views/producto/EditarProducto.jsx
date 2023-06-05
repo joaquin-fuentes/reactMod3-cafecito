@@ -30,6 +30,17 @@ const EditarProducto = () => {
                     <option value="3">opcion 3</option>
                 </Form.Select>
             </Form.Group>
+            <Form.Group className="mb-3">
+                   <Form.Label>Descripcion*</Form.Label>
+                    <Form.Control
+                        as="textarea"
+                        placeholder="Ingrese una descripcion del producto"
+                        style={{ height: '100px' }}
+                        // onChange={(e) => setDescripcion(e.target.value)}
+                        // value={descripcion}
+                    />
+
+                </Form.Group>
             <Button variant="primary" type="submit" className="mt-2">
                 Guardar
             </Button>

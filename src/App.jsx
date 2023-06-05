@@ -18,14 +18,16 @@ const App = () => {
 
     <BrowserRouter>
       <Menu></Menu>
-      <Routes> <Route exact path="/" element={<Inicio></Inicio>} ></Route></Routes>
-      <Routes> <Route exact path="/registro" element={<Registro></Registro>} ></Route></Routes>
-      <Routes> <Route exact path="/login" element={<Login></Login>} ></Route></Routes>
-      <Routes> <Route exact path="/administrador" element={<Administrador></Administrador>} ></Route></Routes>
-      <Routes> <Route exact path="/administrador/crear" element={<CrearProducto></CrearProducto>} ></Route></Routes>
-      <Routes> <Route exact path="/administrador/editar" element={<EditarProducto></EditarProducto>} ></Route></Routes>
-      <Routes> <Route exact path="/detalleProducto" element={<DetalleProducto></DetalleProducto>} ></Route></Routes>
-      <Routes> <Route path="*" element={<Error404></Error404>} ></Route></Routes>
+      <Routes>
+        <Route exact path="/" element={<Inicio></Inicio>} ></Route>
+        <Route exact path="/registro" element={<Registro></Registro>} ></Route>
+        <Route exact path="/login" element={<Login></Login>} ></Route>
+        <Route exact path="/administrador" element={<Administrador></Administrador>} ></Route>
+        <Route exact path="/administrador/crear" element={<CrearProducto></CrearProducto>} ></Route>
+        <Route exact path="/administrador/editar" element={<EditarProducto></EditarProducto>} ></Route>
+        <Route exact path="/detalleProducto" element={<DetalleProducto></DetalleProducto>} ></Route>
+        <Route path="*" element={<Error404></Error404>} ></Route>
+      </Routes>
       <Footer></Footer>
     </BrowserRouter>
 
