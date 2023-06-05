@@ -17,7 +17,7 @@ const Login = () => {
     }
 
     return (
-        <Container className="mainSection">
+        <Container className="main">
             <Card className="my-5">
                 <Card.Header as="h5">Login</Card.Header>
                 <Card.Body>
