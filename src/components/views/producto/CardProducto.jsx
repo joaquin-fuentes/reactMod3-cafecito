@@ -1,5 +1,7 @@
 import { Card, Col, Button } from "react-bootstrap"
 import cafe1 from "../../../assets/cafeNoseNombre.jpg"
+import { Link, NavLink } from "react-router-dom"
+
 
 const CardProducto = () => {
     return (
@@ -11,7 +13,7 @@ const CardProducto = () => {
                     <Card.Text>
                         $800,00
                     </Card.Text>
-                    <Button variant="primary" href="/detalleProducto">Ver detalle</Button>
+                    <NavLink end to={"/detalleProducto"} className={"btn btn-primary"} >Ver detalle</NavLink>
                 </Card.Body>
             </Card>
         </Col>
