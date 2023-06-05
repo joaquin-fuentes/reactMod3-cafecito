@@ -2,6 +2,8 @@ import imgBanner from "../../assets/bannerCafe.avif"
 import { Container, Row } from "react-bootstrap"
 import CardProducto from "./producto/CardProducto";
 
+
+
 const Inicio = () => {
     return (
         <main className="main">
