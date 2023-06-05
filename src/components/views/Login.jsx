@@ -12,11 +12,11 @@ const Login = () => {
 
 
     const onSubmit = (usuario) => {
-        login(usuario).then((respuesta)=>{
-            if(respuesta){
+        login(usuario).then((respuesta) => {
+            if (respuesta) {
                 //debo loguear al usuario
-                sessionStorage.setItem("usuarioLogueado",JSON.stringify(respuesta))
-            } else{
+                sessionStorage.setItem("usuarioLogueado", JSON.stringify(respuesta))
+            } else {
                 // mostrar mensaje de error, usuario o password incorrectos
             }
         })
@@ -32,7 +32,12 @@ const Login = () => {
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email" placeholder="Ingrese un email" {
                                 ...register('email', {
-                                    required: 'El email es obligatorio'
+                                    //validaciones
+                                    required: 'El email es obligatorio',
+                                    pattern: {
+                                        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                        message: "Debe ingresar un email válido"
+                                    }
                                 })
                             } />
                             <Form.Text className="text-danger">
@@ -42,9 +47,21 @@ const Login = () => {
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" {
+                            <Form.Control type="password" placeholder="Password" maxLength={20} {
                                 ...register('password', {
-                                    required: 'El password es obligatorio'
+                                    required: 'El password es obligatorio',
+                                     minLength:{
+                                        value:6,
+                                        message:"El password contener por lo menos 6 caracteres"
+                                      },
+                                      maxLength:{
+                                        value:20,
+                                        message:"El password debe contener como maximo 20 caracteres"
+                                      },
+                                    pattern: {
+                                        value: /^.{6,20}$/,
+                                        message: "El password debe tener entre 6 y 20 caracteres"
+                                    }
                                 })
                             } />
                             <Form.Text className="text-danger">
