@@ -4,7 +4,7 @@ import ItemProducto from './producto/ItemProducto';
 
 const Administrador = () => {
     return (
-        <Container className='my-5'>
+        <Container className='my-5 main'>
             <div className='d-flex justify-content-between '>
                 <h3>Productos disponibles</h3>
                 <Button variant="primary" href="/administrador/crear">
