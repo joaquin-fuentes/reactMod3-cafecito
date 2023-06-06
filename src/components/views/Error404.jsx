@@ -15,7 +15,7 @@ const Error404 = () => {
                 </Col>
             </Row>
         </Container>
-    );
+    );web
 };
 
 export default Error404;
