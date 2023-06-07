@@ -15,8 +15,8 @@ import { useState } from "react";
 
 
 const App = () => {
-
-  const [usuarioLogueado, setUsuarioLogueado] = useState({})
+  const usuarioDelSessionStorage = JSON.parse(sessionStorage.getItem("usuarioLogueado")) || {}
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuarioDelSessionStorage)
 
 
   return (
