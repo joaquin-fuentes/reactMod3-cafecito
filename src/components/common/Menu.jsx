@@ -1,5 +1,7 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap"
 import { Link, NavLink, useNavigate } from "react-router-dom"
+import Swal from "sweetalert2"
+
 
 
 const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
