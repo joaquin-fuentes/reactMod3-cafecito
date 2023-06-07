@@ -1,17 +1,22 @@
 import { Button } from "react-bootstrap"
 import { Link, NavLink } from "react-router-dom"
 
-const ItemProducto = () => {
+const ItemProducto = ({producto}) => {
+
+    const borrarProducto = ()=>{
+        
+    }
+
     return (
-        <tr>
-        <td>1</td>
-        <td>Mark</td>
-        <td>$800,00</td>
-        <td>https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?fit=845%2C503&ssl=1</td>
-        <td>Comun</td>
+     <tr>
+        <td>{producto.id}</td>
+        <td>{producto.nombreProducto}</td>
+        <td>{producto.precio}</td>
+        <td>{producto.imagen}</td>
+        <td>{producto.categoria}</td>
         <td className='text-center'>
-        <NavLink end to={"/administrador/editar"} className={"btn btn-warning m-1"} >Editar</NavLink>
-        <Button className='m-1' variant="danger">Borrar</Button>
+        <Link  to={"/administrador/editar"} className={"btn btn-warning m-1"} >Editar</Link>
+        <Button className='m-1' variant="danger" onClick={borrarProducto}>Borrar</Button>
         </td>
     </tr>
     );

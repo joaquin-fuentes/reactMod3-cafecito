@@ -23,6 +23,14 @@
             "categoria": "dulce",
             "descripcion": "alguna descripcion",
             "imagen": "linkImagen"
+        },
+        {
+            "id": 4,
+            "nombreProducto": "Media luna22222",
+            "precio": 300,
+            "categoria": "dulce",
+            "descripcion": "alguna descripcion",
+            "imagen": "linkImagen"
         }
     ],
     "usuarios": [

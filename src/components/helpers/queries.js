@@ -1,5 +1,7 @@
 // llamar a la variable de entorno
 const URL_USUARIO = import.meta.env.VITE_API_USUARIO
+const URL_PRODUCTO = import.meta.env.VITE_API_PRODUCTO
+
 
 export const login = async (usuario)=>{
     
@@ -29,3 +31,15 @@ export const login = async (usuario)=>{
         return null
     }
 }
+
+export const obtenerProductos = async ()=>{
+    try {
+        const respuesta = await fetch(URL_PRODUCTO)
+        const listaProductos = await respuesta.json()
+        return listaProductos
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
