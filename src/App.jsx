@@ -6,25 +6,32 @@ import Footer from './components/common/Footer';
 import Error404 from "./components/views/Error404";
 import Inicio from "./components/views/Inicio";
 import DetalleProducto from "./components/views/DetalleProducto";
-import CrearProducto from "./components/views/producto/CrearProducto";
-import EditarProducto from "./components/views/producto/EditarProducto";
-import Administrador from "./components/views/Administrador";
 import Registro from "./components/views/Registro"
 import Login from "./components/views/Login"
+import { useState } from "react";
+import RutasProtegidas from "./components/routes/RutasProtegidas";
+import RutasAdministrador from "./components/routes/RutasAdministrador";
 
 
 const App = () => {
+  const usuarioDelSessionStorage = JSON.parse(sessionStorage.getItem("usuarioLogueado")) || {}
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuarioDelSessionStorage)
+
+
   return (
 
     <BrowserRouter>
-      <Menu></Menu>
+      <Menu usuarioLogueado={usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Menu>
       <Routes>
         <Route exact path="/" element={<Inicio></Inicio>} ></Route>
         <Route exact path="/registro" element={<Registro></Registro>} ></Route>
-        <Route exact path="/login" element={<Login></Login>} ></Route>
-        <Route exact path="/administrador" element={<Administrador></Administrador>} ></Route>
-        <Route exact path="/administrador/crear" element={<CrearProducto></CrearProducto>} ></Route>
-        <Route exact path="/administrador/editar" element={<EditarProducto></EditarProducto>} ></Route>
+        <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>} ></Route>
+        <Route path="/administrador/*" element={
+            <RutasProtegidas>
+              <RutasAdministrador></RutasAdministrador>
+            </RutasProtegidas>
+        }></Route>
+
         <Route exact path="/detalleProducto" element={<DetalleProducto></DetalleProducto>} ></Route>
         <Route path="*" element={<Error404></Error404>} ></Route>
       </Routes>
