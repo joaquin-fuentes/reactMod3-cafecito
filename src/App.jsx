@@ -11,17 +11,22 @@ import EditarProducto from "./components/views/producto/EditarProducto";
 import Administrador from "./components/views/Administrador";
 import Registro from "./components/views/Registro"
 import Login from "./components/views/Login"
+import { useState } from "react";
 
 
 const App = () => {
+
+  const [usuarioLogueado, setUsuarioLogueado] = useState({})
+
+
   return (
 
     <BrowserRouter>
-      <Menu></Menu>
+      <Menu usuarioLogueado={usuarioLogueado} setUsuarioLogueado={setUsuarioLogueado}></Menu>
       <Routes>
         <Route exact path="/" element={<Inicio></Inicio>} ></Route>
         <Route exact path="/registro" element={<Registro></Registro>} ></Route>
-        <Route exact path="/login" element={<Login></Login>} ></Route>
+        <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>} ></Route>
         <Route exact path="/administrador" element={<Administrador></Administrador>} ></Route>
         <Route exact path="/administrador/crear" element={<CrearProducto></CrearProducto>} ></Route>
         <Route exact path="/administrador/editar" element={<EditarProducto></EditarProducto>} ></Route>
