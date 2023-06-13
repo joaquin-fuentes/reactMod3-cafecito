@@ -1,10 +1,29 @@
 import { Button } from "react-bootstrap"
 import { Link, NavLink } from "react-router-dom"
+import Swal from "sweetalert2"
 
 const ItemProducto = ({producto}) => {
 
     const borrarProducto = ()=>{
-        
+        Swal.fire({
+            title: 'Estas seguro?',
+            text: "Seguro que deseas borrar el producto!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, borrar!',
+            cancelButtonText: "Cancelar"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Eliminado!',
+                `El producto ${producto.nombreProducto} fue eliminado`,
+                'success'
+              )
+              // aqui tengo que hacer la peticion DELETE 
+            }
+          })
     }
 
     return (

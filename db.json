@@ -1,44 +1,36 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombreProducto": "Café",
-            "precio": 200,
-            "categoria": "bebida caliente",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        },
-        {
-            "id": 2,
-            "nombreProducto": "Tecito",
-            "precio": 300,
-            "categoria": "bebida caliente",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        },
-        {
-            "id": 3,
-            "nombreProducto": "Media luna",
-            "precio": 300,
-            "categoria": "dulce",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        },
-        {
-            "id": 4,
-            "nombreProducto": "Media luna22222",
-            "precio": 300,
-            "categoria": "dulce",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        }
-    ],
-    "usuarios": [
-        {
-            "id": 1,
-            "nombreUsuario": "Admin",
-            "email": "admin@rollingcode.com",
-            "password": "123456"
-        }
-    ]
+  "productos": [
+    {
+      "id": 1,
+      "nombreProducto": "Café",
+      "precio": 200,
+      "categoria": "bebida caliente",
+      "descripcion": "alguna descripcion",
+      "imagen": "linkImagen"
+    },
+    {
+      "id": 2,
+      "nombreProducto": "Tecito",
+      "precio": 300,
+      "categoria": "bebida caliente",
+      "descripcion": "alguna descripcion",
+      "imagen": "linkImagen"
+    },
+    {
+      "id": 3,
+      "nombreProducto": "Media luna",
+      "precio": 300,
+      "categoria": "dulce",
+      "descripcion": "alguna descripcion",
+      "imagen": "linkImagen"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "Admin",
+      "email": "admin@rollingcode.com",
+      "password": "123456"
+    }
+  ]
 }

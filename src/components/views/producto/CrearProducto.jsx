@@ -83,7 +83,6 @@ const CrearProducto = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Categoria*</Form.Label>
-                    {/* CONSULTAR A LOS PROFES DONDE VAN LAS VALIDACIONES EN ESTE CASO */}
                     <Form.Select aria-label="Default select example" {
                         ...register('categoria', {
                             required: 'Debe seleccionar una categoria',
@@ -95,6 +94,7 @@ const CrearProducto = () => {
                     </Form.Select>
                     <Form.Text className="text-danger">
                         {errors.categoria?.message}
+                        
                     </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3">

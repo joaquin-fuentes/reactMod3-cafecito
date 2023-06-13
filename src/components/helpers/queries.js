@@ -40,6 +40,21 @@ export const obtenerProductos = async ()=>{
 
     } catch (error) {
         console.log(error)
+        return null
+    }
+}
+
+export const consultaBorrarProducto = async (id)=>{
+    try {
+        const respuesta = await fetch(`${URL_PRODUCTO}/${id}` , {
+            method:"DELETE"
+        });
+        // const listaProductos = await respuesta.json()
+        return respuesta
+
+    } catch (error) {
+        console.log(error)
+        return null
     }
 }
 
