@@ -7,6 +7,38 @@
       "categoria": "bebida caliente",
       "descripcion": "alguna descripcion",
       "imagen": "linkImagen"
+    },
+    {
+      "nombreProducto": "media luna",
+      "precio": 50,
+      "imagen": "linkdeimagen.jpg",
+      "categoria": 2,
+      "descripcion": "asdasd",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Te",
+      "precio": "150",
+      "imagen": "imagendete.png",
+      "categoria": "2",
+      "descripcion": "bebida caliente",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Pan",
+      "precio": "200",
+      "imagen": "imagendepan.jpg",
+      "categoria": "3",
+      "descripcion": "pan salado",
+      "id": 5
+    },
+    {
+      "nombreProducto": "tortilla",
+      "precio": "50",
+      "imagen": "tortillaimagen.jpg",
+      "categoria": "3",
+      "descripcion": "tortillas finias y gruesas",
+      "id": 6
     }
   ],
   "usuarios": [
