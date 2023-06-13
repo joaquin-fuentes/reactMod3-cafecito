@@ -7,22 +7,6 @@
       "categoria": "bebida caliente",
       "descripcion": "alguna descripcion",
       "imagen": "linkImagen"
-    },
-    {
-      "id": 2,
-      "nombreProducto": "Tecito",
-      "precio": 300,
-      "categoria": "bebida caliente",
-      "descripcion": "alguna descripcion",
-      "imagen": "linkImagen"
-    },
-    {
-      "id": 3,
-      "nombreProducto": "Media luna",
-      "precio": 300,
-      "categoria": "dulce",
-      "descripcion": "alguna descripcion",
-      "imagen": "linkImagen"
     }
   ],
   "usuarios": [
