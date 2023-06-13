@@ -1,19 +1,35 @@
 import { Button, Form, Container } from "react-bootstrap"
 import { useForm } from "react-hook-form";
-
+import { useEffect } from "react";
+import { obtenerProducto } from "../../helpers/queries";
+import { useParams } from "react-router-dom";
 
 const EditarProducto = () => {
-
+    const {id} = useParams()
     const {
         register,
         handleSubmit,
         formState: { errors },
-        // reset
+        reset,
+        setValue
     } = useForm();
 
     const onSubmit = ()=>{
         console.log("paso la validacion")
     }
+
+    useEffect(()=>{
+         obtenerProducto(id).then((respuesta)=>{
+                setValue("nombreProducto", respuesta.nombreProducto)
+                setValue("precio", respuesta.precio)
+                setValue("imagen", respuesta.imagen)
+                setValue("categoria", respuesta.categoria)
+                setValue("descripcion", respuesta.descripcion)
+
+            
+         })
+
+    }, [])
 
     return (
         <Container className="my-4">
