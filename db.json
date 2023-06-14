@@ -1,36 +1,28 @@
 {
   "productos": [
     {
-      "id": 1,
       "nombreProducto": "Café",
-      "precio": 200,
-      "categoria": "bebida caliente",
+      "precio": "500",
+      "imagen": "linkImagen.png",
+      "categoria": "1",
       "descripcion": "alguna descripcion",
-      "imagen": "linkImagen"
+      "id": 1
     },
     {
-      "nombreProducto": "media luna",
-      "precio": 50,
-      "imagen": "linkdeimagen.jpg",
+      "nombreProducto": "media luna 2.0",
+      "precio": "499",
+      "imagen": "linkdeimdfsdfsdfsdfagen.jpg",
       "categoria": 2,
       "descripcion": "asdasd",
       "id": 2
     },
     {
-      "nombreProducto": "Te",
+      "nombreProducto": "Te de te",
       "precio": "150",
       "imagen": "imagendete.png",
       "categoria": "2",
       "descripcion": "bebida caliente",
       "id": 4
-    },
-    {
-      "nombreProducto": "Pan",
-      "precio": "200",
-      "imagen": "imagendepan.jpg",
-      "categoria": "3",
-      "descripcion": "pan salado",
-      "id": 5
     },
     {
       "nombreProducto": "tortilla",
