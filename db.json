@@ -1,36 +1,44 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombreProducto": "Café",
-            "precio": 200,
-            "categoria": "bebida caliente",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        },
-        {
-            "id": 2,
-            "nombreProducto": "Tecito",
-            "precio": 300,
-            "categoria": "bebida caliente",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        },
-        {
-            "id": 3,
-            "nombreProducto": "Media luna",
-            "precio": 300,
-            "categoria": "dulce",
-            "descripcion": "alguna descripcion",
-            "imagen": "linkImagen"
-        }
-    ],
-    "usuarios": [
-        {
-            "id": 1,
-            "nombreUsuario": "Admin",
-            "email": "admin@rollingcode.com",
-            "password": "123456"
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "Café",
+      "precio": "500",
+      "imagen": "linkImagen.png",
+      "categoria": "1",
+      "descripcion": "alguna descripcion",
+      "id": 1
+    },
+    {
+      "nombreProducto": "media luna 2.0",
+      "precio": "499",
+      "imagen": "linkdeimdfsdfsdfsdfagen.jpg",
+      "categoria": 2,
+      "descripcion": "asdasd",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Te de te",
+      "precio": "150",
+      "imagen": "imagendete.png",
+      "categoria": "2",
+      "descripcion": "bebida caliente",
+      "id": 4
+    },
+    {
+      "nombreProducto": "tortilla",
+      "precio": "50",
+      "imagen": "tortillaimagen.jpg",
+      "categoria": "3",
+      "descripcion": "tortillas finias y gruesas",
+      "id": 6
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "Admin",
+      "email": "admin@rollingcode.com",
+      "password": "123456"
+    }
+  ]
 }

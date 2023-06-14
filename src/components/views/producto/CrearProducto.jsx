@@ -1,5 +1,7 @@
 import { Button, Form, Container } from "react-bootstrap"
 import { useForm } from "react-hook-form";
+import { consultaCrearProducto } from "../../helpers/queries";
+import Swal from "sweetalert2";
 
 
 const CrearProducto = () => {
@@ -8,11 +10,29 @@ const CrearProducto = () => {
         register,
         handleSubmit,
         formState: { errors },
-        // reset
+         reset
     } = useForm();
 
-    const onSubmit = () => {
+    const onSubmit = (productoNuevo) => {
+        console.log(productoNuevo)
         console.log("paso la validacion")
+        // realizar la peticion que agrewga producto a la api
+        consultaCrearProducto(productoNuevo).then((respuesta)=>{
+            if(respuesta.status === 201){
+                Swal.fire(
+                    'Agregado!',
+                    `El producto ${productoNuevo.nombreProducto} fue creado`,
+                    'success'
+                )
+                reset()
+            } else{
+                Swal.fire(
+                    'Error!',
+                    `No se pudo procesar su peticion`,
+                    'error'
+                )
+            }
+        })
     }
 
     return (
@@ -45,7 +65,7 @@ const CrearProducto = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Precio*</Form.Label>
-                    <Form.Control type="number" placeholder="Ej:50" maxLength={5} {
+                    <Form.Control type="number" placeholder="Ej:50" maxLength={5} min={0} max={10000} {
                         ...register('precio', {
                             required: 'El campo es obligatorio',
                             pattern: {
@@ -83,7 +103,6 @@ const CrearProducto = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Categoria*</Form.Label>
-                    {/* CONSULTAR A LOS PROFES DONDE VAN LAS VALIDACIONES EN ESTE CASO */}
                     <Form.Select aria-label="Default select example" {
                         ...register('categoria', {
                             required: 'Debe seleccionar una categoria',
@@ -95,6 +114,7 @@ const CrearProducto = () => {
                     </Form.Select>
                     <Form.Text className="text-danger">
                         {errors.categoria?.message}
+
                     </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3">
