@@ -1,4 +1,4 @@
-import imgBanner from "../../assets/bannerCafe.avif"
+import imgBanner from "../../assets/bannerCafecito.png"
 import { Container, Row } from "react-bootstrap"
 import CardProducto from "./producto/CardProducto";
 import { useEffect, useState } from "react";
