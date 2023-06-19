@@ -1,36 +1,44 @@
 {
   "productos": [
     {
-      "nombreProducto": "Café",
+      "nombreProducto": "Café ",
+      "precio": "300",
+      "imagen": "https://www.recetasderechupete.com/wp-content/uploads/2021/04/cafe-expresso-2.jpg",
+      "categoria": "Bebidas calientes",
+      "descripcion": "Café expreso caliente, ideal para arrancar el dia, o para mantenerse despierto estudiando o trabajando",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Sándwiches de jamón y queso",
       "precio": "500",
-      "imagen": "linkImagen.png",
-      "categoria": "1",
-      "descripcion": "alguna descripcion",
-      "id": 1
+      "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/06/12/5e99779a397fc.jpeg",
+      "categoria": "Sandwiches y bocadillos",
+      "descripcion": "Muy rico sandwich para almozar",
+      "id": 8
     },
     {
-      "nombreProducto": "media luna 2.0",
-      "precio": "499",
-      "imagen": "linkdeimdfsdfsdfsdfagen.jpg",
-      "categoria": 2,
-      "descripcion": "asdasd",
-      "id": 2
+      "nombreProducto": "Huevos revueltos con tostadas",
+      "precio": "550",
+      "imagen": "https://resizer.glanacion.com/resizer/2ZoEwRezwuu3LScR0B7AbosBm_k=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/XZRE73LYPFFN5ECELPQ3AFD3D4.jpg",
+      "categoria": "Desayunos",
+      "descripcion": "Desayuno nutritivo para arrancar el dia con toda! ",
+      "id": 9
     },
     {
-      "nombreProducto": "Te de te",
-      "precio": "150",
-      "imagen": "imagendete.png",
-      "categoria": "2",
-      "descripcion": "bebida caliente",
-      "id": 4
+      "nombreProducto": "Limonada",
+      "precio": "250",
+      "imagen": "https://curiosfera-recetas.com/wp-content/uploads/2016/06/C%C3%B3mo-hacer-limonada.jpg",
+      "categoria": "Bebidas frias",
+      "descripcion": "Limonada refrescante para disfrutar en un dia de calor",
+      "id": 10
     },
     {
-      "nombreProducto": "tortilla",
-      "precio": "50",
-      "imagen": "tortillaimagen.jpg",
-      "categoria": "3",
-      "descripcion": "tortillas finias y gruesas",
-      "id": 6
+      "nombreProducto": "Yogur con frutas y granola",
+      "precio": "800",
+      "imagen": "https://images-gmi-pmc.edge-generalmills.com/d784ae83-f64c-486d-933b-100537106cd0.jpg",
+      "categoria": "Complementos y snacks",
+      "descripcion": "Excelente complemento para compartir de postre o media mañana",
+      "id": 11
     }
   ],
   "usuarios": [

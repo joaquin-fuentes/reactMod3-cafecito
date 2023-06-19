@@ -92,7 +92,7 @@ const CrearProducto = () => {
                                 message: "Este campo debe tener como maximo 250 caracteres"
                             },
                             pattern: {
-                                value: /^[a-zA-Z0-9]+\.(png|jpg)$/,
+                                value: /.*\.(jpg|png|jpeg)$/,
                                 message: "La imagen debe estar en formaro .png o .jpg"
                             }
                         })
@@ -108,9 +108,12 @@ const CrearProducto = () => {
                             required: 'Debe seleccionar una categoria',
                         })}>
                         <option value="">Seleccione una opcion</option>
-                        <option value="1">opcion 1</option>
-                        <option value="2">opcion 2</option>
-                        <option value="3">opcion 3</option>
+                        <option value="Bebidas calientes">Bebidas calientes</option>
+                        <option value="Bebidas frias">Bebidas frias</option>
+                        <option value="Resposteria">Resposteria</option>
+                        <option value="Sandwiches y bocadillos">Sandwiches y bocadillos</option>
+                        <option value="Desayunos">Desayunos</option>
+                        <option value="Complementos y snacks">Complementos y snacks</option>
                     </Form.Select>
                     <Form.Text className="text-danger">
                         {errors.categoria?.message}

@@ -10,14 +10,32 @@
   width: 100%;
 }
 .imgBanner{
-   height: 50vh;
+   height: 60vh;
+   width: 100%;
 }
-.imgCafe{
+.imagenProductoInicio{
   height: 300px;
+  object-fit: cover;
 }
+.cuerpoProductoInicio{
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto */
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.imagenDetalleProducto{
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .alineacionProductos {
    display: flex;
    justify-content: center;
   }
+  .imgBanner{
+    height: 40vh;
+ }
 }
+

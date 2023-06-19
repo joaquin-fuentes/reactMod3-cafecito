@@ -32,7 +32,7 @@ const App = () => {
             </RutasProtegidas>
         }></Route>
 
-        <Route exact path="/detalleProducto" element={<DetalleProducto></DetalleProducto>} ></Route>
+        <Route exact path="/detalleProducto/:id" element={<DetalleProducto></DetalleProducto>} ></Route>
         <Route path="*" element={<Error404></Error404>} ></Route>
       </Routes>
       <Footer></Footer>
