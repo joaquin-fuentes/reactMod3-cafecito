@@ -31,6 +31,14 @@
       "categoria": "3",
       "descripcion": "tortillas finias y gruesas",
       "id": 6
+    },
+    {
+      "nombreProducto": "Café ",
+      "precio": "300",
+      "imagen": "https://www.recetasderechupete.com/wp-content/uploads/2021/04/cafe-expresso-2.jpg",
+      "categoria": "Bebidas calientes",
+      "descripcion": "Café expreso caliente, ideal para arrancar el dia, o para mantenerse despierto estudiando o trabajando",
+      "id": 7
     }
   ],
   "usuarios": [
